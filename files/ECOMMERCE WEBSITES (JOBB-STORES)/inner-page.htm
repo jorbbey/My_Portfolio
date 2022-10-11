@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=Edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1">  
+  <title> Jobb-Store buy?cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+                
+        .logo {
+  margin-top: -300px;
+  margin-left: -25px;
+  position: fixed;
+}
+
+.logo img {
+  margin-left: 0;
+  width: 200px;
+}
+
+        .row {
+            justify-content: flex-start;
+            max-width: 100%;
+        }
+
+        .col-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 80%;
+            margin: 300px auto;
+        }
+
+        .col-4 img{
+            width: 200px;
+            height: 250px;
+        }
+
+        .col-4 h1{
+            position: relative;
+            margin-top: -150px;
+            margin-left: 250px;
+            width: 50%;
+        }
+
+        .col-4 .rating{
+            color: red;
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+
+        .col-4 .info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            line-height: 2;
+            margin-top: 50px;
+            width: 70%;
+        }
+
+        .col-4 .info p{
+            font-size: 14px;
+        }
+
+        .col-4 .info .boxes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100px;
+            height: 200px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .col-4 .info .boxes #box{
+                    width: 50%;
+                    height: 50px;
+                    text-align: center;
+                    padding-top: 8px;
+                    border-style: dotted;
+                    border-color: #000;
+                    border-width: 2px;
+                    background-color: grey;
+        }
+    
+        .col-4 .info .boxes #box:first-child{
+            border-style: groove;
+                    border-color: red;
+                    border-width: 2px;
+        }
+
+        .col-4 .info #color, #size{
+            font-size: 18px;
+            display: block;
+        }
+
+        .col-4 .info #color > input[type="color"]{
+            width: 235px;
+            height: 35px;
+        }
+
+        
+        .col-4 .info #size select{
+            width: 235px;
+            height: 35px;
+        }
+
+        .col-4 #sizeChart{
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .col-4 #sizeChart ul{
+            height: auto;
+            margin-top: 20px;
+            line-height: 2;
+            list-style: square;
+            font-size: 14px;
+        }
+
+        .col-4 .cartBtn{
+            padding: 10px;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            background-color: orange;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        /***** Footer ******/
+
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  padding-top: 12px;
+  width: 150px;
+  height: 50px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.buttons a:hover {
+  border: 1px solid #000;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+          
+    </style>
+</head>
+
+<body>
+    
+       <div class="navbar">
+                <div class="logo">
+                    <img src="images/others/logo.png">
+                </div>
+
+            </div>
+
+
+    <div class="small-ctn">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/jackets/img25.jpg">
+                    <h1>Gildan Men's Ultra Cotton Long Sleeve T-Shirt, Style G2400, Multipack
+                    </h1>
+                    <div class="rating">
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star_half</i>
+                    </div>
+                 
+                    <div class="info">
+                        <p> 4.5 out of 5 stars 117,987 <br> ratings
+                            Price  >>> <span style="color:
+                            red;">$25.00 - $50.00</span>
+                                <br><br>
+                          <strong>Fit:</strong> <span style="color: rgb(68, 68, 166); "> True to size. Order usual size</span>
+                            <br><br>
+                            Number of Items: 2
+                            <br>
+
+                            <div class="boxes">
+                            <div id="box">2</div>
+                            <div id="box">3</div>
+                            <div id="box">4</div>
+                            </div>
+    
+                            <div id="color"> Color : 
+                                <input type="color" value="#433232" name="color" placeholder="Dark brown (Two Pack)">
+                            </div>
+    
+                            <div id="color"> Size :
+                                <select name="size" id="">
+                                    <option value="2">50%</option>
+                                    <option value="2">90%</option>
+                                    <option value="2">100%</option>
+                                    <option value="2">65%</option>
+                                </select>
+                            </div>
+    
+                    </div>
+
+                  <div id="sizeChart">
+                     <span style="color: blue; font-size: 1
+                     22px;"><h4>Size Chart</h4> </span>  
+                  <ul>
+                      <li>Solids: 100% Cotton; Ash Grey: 99% Cotton, 1% Polyester; Sport Grey and Antique Heathers: 90% Cotton, 10% Polyester; Safety Colors and Heathers: 50% Cotton, 50% Polyester</li>
+                 <li> Imported</li>
+                <li>  No Closure closure</li>
+                  <li>Machine Wash</li>
+                  <li>Heavyweight 6 oz. per sq. yd. fabric made from 100% US cotton</li>
+                 <li> Featuring taped neck and shoulders and double-needle 7/8’’ collar and bottom hem for long-lasting comfort and durability </li>
+                    <li> Classic fit delivers all the breathable comfort you want
+                  Show more </li>
+                  </ul>
+                  </div>
+                  
+                  <div class="cartBtn"> Add to Cart</div>
+                
+            </div>
+
+
+        </div>
+    </div>
+  
+  
+            <div class="buttons">
+                <a href="Ecommerce.htm"> Home &#8594;</a>
+            </div>
+
+             <!--- footer ---->
+             <div class="footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="footer-col-1">
+                      <h3> Get App </h3>
+                      <p>
+                        Download App for Android/IOS mobile phone
+                      </p>
+                      <div class="app-logo">
+                        <a href="https://www.googleplaystore.com"> <img src="images/others/play-store.png"></a>
+                        <a href="https://www.appstore.com"><img src="images/others/app-store.png"></a>
+                      </div>
+
+                    </div>
+
+                    <div class="footer-col-2">
+                      <img src="images/others/logo.png">
+                      <p>
+                        Our purpose is to Sustainably Make the Pleasure and Benefits of a Good Debut Accessible to All
+                      </p>
+                    </div>
+
+                    <div class="footer-col-3">
+                      <h3> Links </h3>
+                      <ul>
+                        <li><a href="#!">Coupons</a></li>
+                        <li><a href="#!">Blog Post</a></li>
+                        <li> <a href="#!">Return Policy</a></li>
+                        <li><a href="#!">Join Affiliate</a></li>
+
+                      </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                      <h3> Follow Us on </h3>
+                      <ul>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://www.youtube.com">Youtube</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.facebook.com">Facebook's</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <hr>
+                  <p>
+                    Made by Blessed Joseph @ jorbbey.org
+                  </p>
+                </div>
+              </div>
+
+                
+    
+           <script src="Ecommerce.js"></script>
+</body>
+
+</html>

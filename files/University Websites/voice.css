@@ -1,0 +1,117 @@
+
+  *{
+  margin: 0;
+ padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+  
+  
+  body{
+    background-color: black;
+  }
+  
+  .header{
+    margin-top: 2px;
+  }
+  .header img{
+    height: 55px;
+    width: 65px;
+  }
+    
+  .title{
+    margin-top: -60px;
+    margin-left: 115px;
+  }
+  
+  .title img{
+    height: 55px;
+    width: 115px;
+  }
+    
+  .search > input[type="text"]{
+    padding: 10px;
+    width: 98%;
+    height: 20px;
+    position: absolute;
+    color: grey;
+    background: darkslategrey;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    top: 60px;
+  }
+  .body-img{
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  .body-img img{
+    width: 95%;
+    height: auto;
+  }
+    
+    .content{
+      color: white;
+      margin-top: 50px;
+      margin-left: 10px;
+      text-spacing: 20px;
+      font-size: 18px;
+      font-weight: 500px;
+    }
+  
+  .pink{
+    color: fuchsia;
+  }
+  
+  .about{
+    margin-top: 100px;
+  }
+  
+  .about img{
+    height: 90px;
+    width: 80px;
+  }
+  
+   .about-text{
+     margin-left:120px;
+     color: white;
+     font-size: 16px;
+     margin-top: -50px;
+   }
+  
+   .ref{
+     color: white;
+     font-size: 16px;
+   }
+ 
+
+   .ref2{
+     color: white;
+     font-size: 18px;
+     text-align: right;
+     margin-top:50px;
+   }  
+  
+  .related{
+    padding: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    background: black;
+    margin-top: -15px;
+    margin-left: 75px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .other1{
+  margin-top: 40px;
+  margin-left: 20px;
+    color: white;
+    font-size: 18px;
+}
+  .other1 img{
+    width: 95%;
+    height: auto;
+  }
