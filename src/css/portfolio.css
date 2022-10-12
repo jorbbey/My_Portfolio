@@ -1068,7 +1068,6 @@ footer .social-links{
         .hidden_left{
             opacity: 0;
             filter: blur(5px);
-            transform: translateX(-100%);
             transition: all 1s;
         }
         
@@ -1080,14 +1079,12 @@ footer .social-links{
                 .hidden_right {
                     opacity: 0;
                     filter: blur(5px);
-                    transform: translateX(100%);
                     transition: all 1s;
                 }
     
         .show{
             opacity: 1;
             filter: blur(0);
-            transform: translateX(0);
         }
 
                 .stack:nth-child(2) {
