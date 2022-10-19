@@ -159,22 +159,3 @@ testimonialsBtn.addEventListener('click', () => {
   testimonials.scrollIntoView(true);
 });
 
-
-// Scroll Effect
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
-
-const hiddenTop = document.querySelectorAll('.hidden_left');
-
-const hiddenMiddle = document.querySelectorAll('.hidden_middle');
-const hiddenRight = document.querySelectorAll('.hidden_right');
-
-hiddenTop.forEach((elem) => observer.observe(elem));
-hiddenMiddle.forEach((elem) => observer.observe(elem));
-hiddenRight.forEach((elem) => observer.observe(elem));
