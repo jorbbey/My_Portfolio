@@ -259,17 +259,16 @@ body{
 
 .about .text{
     width: 100%;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin: 50px auto;
     line-height: 1.5;
 }
 
 .about .text p{
-    text-align: left;
+    text-align: center;
 }
 
 .about .button{
-    margin: 20px 100px;
+    margin: 20px auto;
 }
 
 .about .about-me-page{
@@ -294,6 +293,16 @@ body{
     width: 100%;
     height: auto;
     border-radius: 15px;
+}
+
+.about .about-me-page .text{
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.about .about-me-page .text p{
+    text-align: center;
 }
 
 .my-experience{

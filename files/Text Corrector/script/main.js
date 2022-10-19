@@ -17,7 +17,7 @@ function checkError() {
   let request = `https://api.apilayer.com/spell/spellchecker?q=${input}`;
 
   let requestOptions = {
-    method: 'GET',
+    method: 'GET',0
     redirect: 'follow',
     headers: myHeaders
   };

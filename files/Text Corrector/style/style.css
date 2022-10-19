@@ -8,7 +8,16 @@
   font-weight: 500;
 }
 
+body{
+  background: rgb(251, 247, 239);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .searchBox {
+  margin-top: 5%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -26,16 +35,21 @@
 
 .searchBox input[type="text"] {
   width: 80%;
-  border: 2px solid #00B3E6;
-  padding: 0 5px;
+  height: 50px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+  padding: 0 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   font-family: display;
 
 }
 
 .searchBox input[type="submit"] {
   width: 20%;
-  background: #00B3E6;
-  color: #ffffff;
+  height: 50px;
+  background: rgb(197, 162, 92);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+  color:#ffffff;
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 800;
