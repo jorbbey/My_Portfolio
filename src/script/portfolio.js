@@ -2,7 +2,7 @@
 
 //typewritter effect
 
-    const words = ["Frontend developer.", "JavaScript enthusiast.", "Freelancer.", "Vue developer..."];
+    const words = ["Frontend developer.", "JavaScript enthusiast.", "Freelancer.", "React JS developer..."];
       let i = 0;
       let counter;
         function typeNow() {
