@@ -19,5 +19,7 @@
     } else {
         echo "Failed to send mail";
     }
+
+    
 ?>
 

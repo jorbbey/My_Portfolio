@@ -258,7 +258,7 @@ body{
 }
 
 .about .text{
-    width: 100%;
+    width: 50%;
     margin: 50px auto;
     line-height: 1.5;
 }
@@ -507,6 +507,15 @@ body{
     line-height: 1.5;
     width: 85%;
     margin: 0 auto;
+}
+
+.porfolio .files .file .text .stack {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    width: 85%;
+    margin: 15px auto;
+    background-color: green;
 }
 
 .porfolio .files .file .buttons{
@@ -892,6 +901,7 @@ footer p{
 }
 
 .about .text{
+    width: 100%;
     margin-left: 10px;
 }
 
