@@ -2,7 +2,7 @@
 
 //typewritter effect
 
-const words = [ "Frontend developer...", "JavaScript enthusiast...", "Freelancer...", "React JS developer...", "Vue JS developer...  " ];
+const words = [ "Frontend developer...", "JavaScript enthusiast...", "Freelancer...", "React JS developer...", "Typescript developer...  " ];
 let i = 0;
 let counter;
 
