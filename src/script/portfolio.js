@@ -88,6 +88,25 @@ function showSlides () {
 }
 
 
+const swiper = new Swiper('.swiper-container', {
+  loop: true,  // Enable looping of slides
+  autoplay: {
+    delay: 2500,  // Time delay between slides
+    disableOnInteraction: false,  // Continue autoplay after user interaction
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,  // Make pagination dots clickable
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',  // Next button
+    prevEl: '.swiper-button-prev',  // Previous button
+  },
+  effect: 'fade',  // Fade transition effect
+});
+
+
+
 
 // Menu Bar 
 const menuBar = document.querySelector( '.menu' );

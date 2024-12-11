@@ -10,7 +10,9 @@
    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./src/css/portfolio.css">
-    <script src="./src/script/portfolio.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+    
+   
 </head>
 <body>
     <section class="intro ">
@@ -20,7 +22,7 @@
             <p id="text"></p>
         </div>
         <div class="buttons">
-            <a href="files/Joseph Akpan_Software Developer.pdf" class="download " download >Download CV</a>
+            <a href="files/Joseph Akpan_Software developer.pdf" class="download " download >Download CV</a>
             <div class="button" id="talk-btn"><a href="#!">Let's Talk</a></div>
         </div>
         <div class="image ">
@@ -45,11 +47,21 @@
             <p>Get To Know</p>
             <h1>About Me</h1>
 
-            <div class="image-ctn">
+    <div class="image-ctn swiper-container">
+    <div class="image swiper-wrapper">
+      <div class="swiper-slide"><img src="../images/about-me.jpg" alt="Image 1"></div>
+      <div class="swiper-slide"><img src="../images/me-img.jpg" alt="Image 2"></div>
+      <div class="swiper-slide"><img src="../images/slide2.jpg" alt="Image 3"></div>
+      <div class="swiper-slide"><img src="../images/slide3.jpg" alt="Image 3"></div>
+      <div class="swiper-slide"><img src="../images/slide4.jpg" alt="Image 3"></div>
+    </div>
+  </div>
+
+            <!-- <div class="image-ctn">
                <div class="image">
                     <img src="../images/me-img.jpg" alt="image">
                 </div>
-         </div>
+         </div> -->
 
          <div class="about-me ">
             <div class="box">
@@ -82,13 +94,9 @@
                         <img src="../images/about_me.jpg" alt="About_Me_Image">
                     </div>
                     <div class="text">
-                        <p> Self-motivated IT professional with deep knowledge and proﬁciency in Frontend software development, as well as highly potent skills and ability in encoding virusfree and eﬃcient code, plus a very strong ability to execute and standard software architectural patterns. Seeks the position of Frontend Software Developer with your Company.
-                             <br>
-                            I am studying for my B.Sc in Coputuer Science in the University Of Technology, Minna. I am a self taught frontend web designer and developer. I like to build creative designs from scratch and i experiment alot. I am quiet, confident, naturally curious and perpetually working on improving my skills. 
-                            <br> 
-                            I'm in search of freelance/full-time/part-time jobs and intern opportunities 
-                            <br><br>
-                            Blessed Joseph
+                        <p> Self-motivated IT professional with strong proficiency in Frontend software development, specializing in writing clean, efficient code and applying solid software architectural patterns. Currently pursuing a B.Sc in Computer Science at the University of Technology, Minna. A self-taught frontend developer with a passion for creating innovative designs from scratch. I am curious, confident, and always striving to enhance my skills. Seeking freelance, full-time, part-time, or internship opportunities.
+                            <br> <br>
+                          Joseph Akpan
                         </p>
                     </div>
             </div>
@@ -125,12 +133,12 @@
                     <ul class="">
                         <li>
                             <h6>Vue</h6>
-                            <P> 85% Experienced</P>
+                            <P> 80% Experienced</P>
                         </li>
                         
                         <li>
                             <h6>React</h6>
-                            <P>80% Experienced</P>
+                            <P>85% Experienced</P>
                         </li>
 
                     <li>
@@ -147,13 +155,13 @@
             <div class="language">
                 <ul class="">
 
-                      <li></li>
-                        <h6>FireBase</h6>
+                      <li>
+                        <h6>PHP (Laravel)</h6>
                         <P>Basic</P>
                     </li>
                      
                     <li>
-                        <h6>Django</h6>
+                        <h6>GO</h6>
                         <P>Basic</P>
                     </li>
                 </ul>
@@ -186,28 +194,29 @@
         <div class="services ">
             <div class="service">
                 <div class="head">
-                    <h4>UI/UX Design</h4>
+                    <h4>Frontend Development</h4>
                 </div>
 
                 <ul class="">
-                    <li> <p>Designing a beautiful, functional and easy to use design system</p></li>
-                    <li><p>Designing desirable digital products for clients</p></li>
-                    <li><p>Ensure a consistent design language across applications, users and plartforms to provide a discernable, easy experience</p></li>
-                    <li><p>Craft seamless and attractive user experiences and interface in close collaboration with mobile, web and hardware</p></li>
+                    <li> <p>Design websites that look great and work perfectly on any device.</p></li>
+                    <li><p>Add interactive features like buttons, animations, and forms.</p></li>
+                    <li><p>Connect your website to backend systems for real-time updates.</p></li>
+                    <li><p>Improve loading speed for a better user experience.</p></li>
+                    <li><p>Ensure your website works smoothly on all browsers.</p></li>
                 </ul>
             </div>
 
             <div class="service">
                 <div class="head">
-                    <h4>Web Development</h4>
+                    <h4>Backend Development</h4>
                 </div>
 
                 <ul class="">
-                    <li><p>Developing easy and scalable User Interfaces and Navigation menus</p></li>
-                    <li><p>Writing and reviewing code for sites, typically Javascript</p></li>
-                    <li><p>Testing & debugging web applications</p></li>
-                    <li><p>Troubleshooting problems with performance and user experience</p></li>
-                    <li><p>Integrating multimedia contents into websites/app</p></li>
+                    <li><p>Set up secure login and account systems for your users.</p></li>
+                    <li><p>Build systems to handle and organize your website’s data.</p></li>
+                    <li><p>Create APIs to connect your website with other tools or services.</p></li>
+                    <li><p>Ensure your website can handle high traffic without slowing down.</p></li>
+                    <li><p>Keep your data safe and perform regular backend updates.</p></li>
                 </ul>
             </div>
         </div>
@@ -221,7 +230,7 @@
 
             <div class="files ">
                 
-                <div class="file  ">
+                <!-- <div class="file  ">
                     <div class="image">
                         <img src="../images/space-travel.png" alt="image">
                     </div>
@@ -233,7 +242,7 @@
                         <a href="https://github.com/jorbbey/Space-tourism-app--r" class="github">Github</a>
                         <a href="https://space-tourism-app-r.netlify.app" class="demo">Live Demo</a>
                     </div>
-                </div>
+                </div> -->
 
                 
                 <div class="file  ">
@@ -278,20 +287,6 @@
                         <a href="https://payment-b-form.netlify.app/" class="demo">Live Demo</a>
                     </div>
                 </div>
-<!--                 
-                <div class="file ">
-                    <div class="image">
-                        <img src="../images/random-user-gen.png" alt="image">
-                    </div>
-                    <div class="text">
-                        <p>Random User Generator </p>
-                        <div class="stack">Vue & CSS </div>
-                    </div>
-                    <div class="buttons _middle">
-                        <a href="https://github.com/jorbbey/random-user-generator" class="github">Github</a>
-                        <a href="https://random-user-gen-b.netlify.app" class="demo">Live Demo</a>
-                    </div>
-                </div> -->
 
                  <div class="file  ">
                     <div class="image">
@@ -321,37 +316,10 @@
        <div class="mySlides fade">
           <img src="../images/user-1.png" style="width:100%">
           <div class="caption">
-             <p>A truly beautiful work Blessed. Keep up the great work</p>
-             <p class="name">Jack<br>Client</p>
+             <p>I’m extremely pleased with the portfolio created for me—it exceeded my expectations in both professionalism and creativity. The design is not only visually stunning but also highly organized and user-friendly, showcasing my skills and achievements effectively. Communication was seamless, and my vision was perfectly brought to life. I highly recommend this service to anyone seeking a standout portfolio in today’s competitive market. Exceptional work!</p>
+             <p class="name">Emix Brands<br>Client</p>
           </div>
        </div>
-
-       <div class="mySlides fade">
-          <img src="../images/user-2.png" style="width:100%">
-          <div class="caption">
-             <p> Joseph did a very marvelous job. I recommend him for an ecommerce website/online store</p>
-             <p class="name">Gladys<br>Client</p>
-          </div>
-       </div>
-
-       <div class="mySlides fade">
-          <img src="../images/user-3.jpg" style="width:100%">
-          <div class="caption">
-             <p> He gives soo much attention to details - this makes his work Amazing. I would absolutely recommend him for any sort of website / landing pages.</p>
-             <p class="name">Thompson<br>Client</p>
-          </div>
-       </div>
-
-       <div class="mySlides fade">
-          <img src="../images/user-4.jpg" style="width:100%">
-          
-          <div class="caption">
-             <p>He is dilligent to the Job, and he has the utmost respect for time. Joseph is careful about so many things. He's also got great communication skill</p>
-             <p class="name">Brenda<br>Client</p>
-          </div>
-
-       </div>
- 
     </div>
      
 
@@ -368,11 +336,11 @@
                     <a href="mailto:jorbbey@gmail.com">Send a Message</a>
             </div>
 
-            <div class="link">
-                <img src="../images/twitter-colored.png" alt="image">
-                <h2>Twitter</h2>
-                <a href="https://mobile.twitter.com/Jorbbey">Send a Message</a>
-        </div>
+         <div class="link">
+  <img src="../images/whatsapp.jpg" alt="image">
+  <h2>WhatsApp</h2>
+  <a href="https://wa.me/2347052044346" target="_blank">Send a Message</a>
+</div>
 
         <div class="link">
             <img src="../images/linkedin-colored.png" alt="image">
@@ -451,5 +419,7 @@
 </div>
 
 </section>
+ <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+ <script src="./src/script/portfolio.js"></script>
 </body>
 </html>
