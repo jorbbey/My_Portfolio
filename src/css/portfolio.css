@@ -508,7 +508,7 @@ body{
 .porfolio .files .file .text p{
     text-align: left;
     line-height: 1.5;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -516,7 +516,7 @@ body{
     color: #fff;
     font-weight: 400;
     font-size: 12px;
-    width: 100%;
+    width: 90%;
     margin: 15px auto;
 }
 
